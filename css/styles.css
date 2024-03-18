@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style header */
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+header p {
+  font-size: 92px;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: -2px 3px 7px #3f51b5;
+  color: black;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  /*   rgb(197, 195, 230); */
+}
+
+header .header_img {
+  width: 200px;
+}
+
+header .header_img img {
+  width: 100%;
+}
+
+/* nav style */
+
+nav {
+  text-align: center;
+  border-top: 2px solid #3f51b5;
+  border-bottom: 2px solid #3f51b5;
+  padding: 17px 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 18px;
+}
+nav ul li a {
+  padding: 10px 14px;
+  box-shadow: 3px 3px 6px 0px #3f51b5;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  background: url("../Imagenes/fondo.webp") center center no-repeat;
+  background-size: cover;
+}
+
+/* recomendados style */
+.recomendados .recomendados_title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+.recomendado {
+  display: flex;
+  justify-content: center;
+}
+
+.games p {
+  text-align: center;
+  background: #c5c3e6;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.games_content {
+  padding: 0 15px;
+}
+
+.game_img {
+  width: 20rem;
+  height: 20rem;
+}
+.game_img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* plataforma style  */
+.plataformas p {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.plataforma {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.plat_content {
+  padding: 10px 30px;
+  background: #c5c3e6;
+  /* height: 100%; */
+  display: flex;
+  width: 100%;
+  /* height: 100%; */
+  margin: 10px;
+}
+
+.plat {
+  width: 25rem;
+  padding: 0 20px;
+  /* height: 100%; */
+  display: flex;
+}
+
+.plat.table {
+  display: flex;
+  justify-content: center;
+}
+
+.plat.table .plat_content {
+  justify-content: center;
+}
+
+table {
+  background: white;
+  border-spacing: 0;
+}
+
+table th {
+  border: 1px solid black;
+}
+table td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+/* footer style */
+
+footer {
+  background: black;
+  color: white;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-around;
+  padding: 38px 0;
+}
+
+.copy,
+.form,
+.name {
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  header p {
+    font-size: 64px;
+  }
+  header .header_img {
+    width: 145px;
+  }
+  .recomendado {
+    flex-wrap: wrap;
+  }
+  .games_content {
+    padding-bottom: 25px;
+  }
+  .plat_content {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header p {
+    font-size: 40px;
+  }
+  header .header_img {
+    width: 80px;
+  }
+  .plataforma {
+    flex-direction: column;
+    align-items: center;
+  }
+  .plat {
+    padding-bottom: 19px;
+  }
+  .footer_content {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .copy,
+  .form,
+  .name {
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 567px) {
+  header p {
+    font-size: 30px;
+  }
+  header .header_img {
+    width: 60px;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0;
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: flex;
+    padding: 13px 14px;
+    box-shadow: -3px 6px 0px 0px #3f51b5;
+    border-radius: 0;
+    justify-content: center;
+  }
+  tr td:nth-child(1) {
+    white-space: normal;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header p {
+    font-size: 21px;
+  }
+  .recomendados .recomendados_title {
+    font-size: 19px;
+  }
+  .game_img {
+    width: 100%;
+  }
+  .plataformas p {
+    font-size: 19px;
+  }
+  .plataforma {
+    padding: 0 20px;
+    padding-bottom: 20px;
+  }
+  .plat {
+    width: 100%;
+  }
+  .plat_content {
+    padding: 10px 0px;
+  }
+  table td {
+    white-space: nowrap;
+  }
+}
